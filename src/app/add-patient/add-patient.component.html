@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<h1 class="display-4 text-center mt-5">Add Friend</h1>   
+<p> </p>
+<div class="container">
+<div class="row">
+  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+      <div class="row g-3 d-flex justify-content-center align-items-center h-100">
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Name</label>
+              <input type="text" name="name" [(ngModel)]="name" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Doctor Name</label>
+              <input type="text" name="doctor" [(ngModel)]="doctor" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Mobile no</label>
+              <input type="text" name="mobileno" [(ngModel)]="mobileno" class="form-control">
+          </div>
+          <div class="col col-10 col-sm-5 col-lg-5 col-xl-5 col-xxl-5">
+              <label for="" class="form-label">Address</label>
+              <input type="text" name="address" [(ngModel)]="address" class="form-control">
+          </div>        
+          <div class="col col-10 col-sm-10 col-lg-10 col-xl-10 col-xxl-10 text-center">
+              <button (click)="readValues()" class="btn btn-primary w-50">Submit</button>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+

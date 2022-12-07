@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<h1 class="display-4 text-center mt-3 ">Welcome {{data.name}}</h1> 
+<table class="table table-striped-columns">
+    <tbody>
+    <tr>
+    <th scope="col">Patient Name</th>
+    <th scope="col">Doctor Name</th>
+    <th scope="col">Mobile no</th>
+    <th scope="col">Address</th>
+
+    </tr>
+   
+   
+   
+    <tr *ngFor="let i of data">
+    <td>{{i.name}}</td>    
+    <td>{{i.doctor}}</td>
+    <td>{{i.mobileno}}</td>
+    <td>{{i.address}}</td>
+    </tr>
+    
+    </tbody>
+    </table>
